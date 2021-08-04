@@ -8,18 +8,17 @@
 <div id="Main" style="height: 500px;">
 <div id="LZ_container" style="height: 100%;"></div>
 </div>
-            <script type="text/javascript" src=https://locationfinder-cdn.heineken.com/libraries/static/js/LocationFinder-3.0.4.js charset="utf-8"></script>
-            <script type="text/javascript">
-                new LocationFinder({
-                    wrapper: 'LZ_container', 
-                    googleKey: 'AIzaSyAAHJvsk1-lWjfpIllrk7ZjfIFLqCbtrCk', // See widget guide how to obtain this value
-                    apiBaseUrl: 'https://logicapi.heineken.nl/locatiezoeker',
-                    apiKey: 'f6d0036a7fda495ab0adc785182dadf6', // See the widget guide how to obtain this value
-                    locationFinderId: '0_f290429f34b49bfaf861a88e83ff2d4e',
-                    theme: 'Heineken', // Empty or missing uses default Google Maps
-                    language: 'en', // Possible languages are: en, nl
-                    GAtrackerId: '' // See the widget guide how to obtain this value
-                });
-            </script>
+            <script type="text/javascript" src="https://assets-emea.rewards.heineken.com/libs/widget/3.2.13/RewardsWidget.3.2.13.js"></script>
+				<style type="text/css">@import url("https://assets-emea.rewards.heineken.com/cms/brandstyles/YourBrandName/styles.css");</style>
+				<style type="text/css">@import url("https://assets-emea.rewards.heineken.com/cms/campaignstyles/cc60cf3d-5057-402c-8330-2c134289bfc4/styles.css");</style>
+
+<div id="root"></div>
+<script>
+  new Rewards.RewardsWidget({
+    campaignId: 'cc60cf3d-5057-402c-8330-2c134289bfc4',
+    apiUrl: 'https://api-emea.rewards.heineken.com/rewards-hint',
+    apiKey: '-API-KEY-'
+  });
+</script>
 </body>
 </html>
